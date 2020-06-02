@@ -1,0 +1,50 @@
+\usetheme{AnnArbor}
+\usecolortheme{beaver}
+
+
+\makeatletter
+\setbeamertemplate{footline}
+{
+\leavevmode%
+\hbox{%
+\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,center]
+	{title in head/foot}%
+	\usebeamerfont{title in head/foot}\insertshorttitle
+\end{beamercolorbox}%
+\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+	\usebeamerfont{author in head/foot}
+		\insertshortauthor~~\beamer@ifempty{\insertshortinstitute}{}{}
+\end{beamercolorbox}}%
+\vskip0pt%
+}
+\makeatother
+\usefonttheme[onlymath]{serif}
+%\usefonttheme{professionalfonts}
+\usepackage[croatian]{babel}
+\usepackage{color}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{supertabular}
+\usepackage{booktabs}							%za ljepse tablice
+\usepackage{gensymb}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.gif}
+
+\newcommand{\xDownarrow}[1]{{\left\Downarrow\vbox to #1{}\right.\kern-\nulldelimiterspace}
+}
+
+
+\definecolor{FOIorange}{RGB}{248,179,35}
+\definecolor{FOIred}{RGB}{206,0,61}
+
+\setbeamercolor{block title}{bg=FOIred, fg=FOIorange}
+\setbeamercolor{title}{bg=FOIorange,fg=FOIred}
+\setbeamercolor{block body}{bg=gray!10!white}
+%\setbeamercolor{block body}{bg=white}
+\setbeamercolor{frametitle}{bg=FOIorange}
+
+
+\usepackage{tikz}
+\usetikzlibrary{calc,shapes.callouts,shapes.arrows}
